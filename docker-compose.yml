@@ -7,9 +7,6 @@ services:
     restart: unless-stopped
     volumes:
       - ./data:/app/data
-    environment:
-      - BOT_TOKEN=1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghi
-      - ADMIN_CHAT_ID=123456789
     logging:
       driver: "json-file"
       options:
